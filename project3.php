@@ -3,10 +3,13 @@
 $username = "admin";
 $password = "1234";
 
-$inputUsername="";
-$inputPassword="";
+$inputUsername="admin";
+$inputPassword="1234";
 
-"Login Successful";
 
-"Invalid username or password";
+if($username == $inputUsername && $password == $inputPassword)
+    "Login Successful";
+else
+    "Invalid username or password";
+
 ?>
