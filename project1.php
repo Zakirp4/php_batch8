@@ -1,7 +1,6 @@
 <?php
 
 $number = -4;
-$positive_negative_status = "";
 
 echo "The number -4 is" . positiveNegative($number) . " and" . oddEven($number); ;
 
