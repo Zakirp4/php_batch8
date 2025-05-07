@@ -1,8 +1,8 @@
 <?php
 
-$number = -4;
+$number = -5;
 
-echo "The number -4 is" . positiveNegative($number) . " and" . oddEven($number); ;
+echo "The number $number is" . positiveNegative($number) . " and" . oddEven($number); ;
 
 function positiveNegative($n) {
     if($n > 0)
