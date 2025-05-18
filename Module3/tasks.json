@@ -1,3 +1,14 @@
 [
-
+    {
+        "task": "Do the brackfast",
+        "done": false
+    },
+    {
+        "task": "Dry the hair",
+        "done": false
+    },
+    {
+        "task": "Go to the office",
+        "done": false
+    }
 ]
