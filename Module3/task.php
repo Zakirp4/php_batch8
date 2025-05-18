@@ -8,12 +8,12 @@ define("TASKS_FILE", "tasks.json");
 
 function loadTasks(): array {
     if(!file_exists(TASKS_FILE)){
-        return [];
+        return [];  //return emty arry if file not exist
     }
 
-    $data = file_get_contents(TASKS_FILE);
+    $data = file_get_contents(TASKS_FILE); // read all data
 
-    return $data ? json_decode($data, true) : [];
+    return $data ? json_decode($data, true) : []; // convert it to normal text
 }
 // Load tasks from the tasks.json file
 $tasks = loadTasks();
@@ -66,7 +66,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>To-Do App</title>
+    <title>ToDo App</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.min.css">
     <style>
         body {
@@ -103,7 +103,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
 <body>
     <div class="container">
         <div class="task-card">
-            <h1>To-Do App</h1>
+            <h1>TO DO App</h1>
 
             <!-- Add Task Form -->
             <form method="POST">
